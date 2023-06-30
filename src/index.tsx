@@ -6,7 +6,7 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const RustoreRateit = NativeModules.RustoreRateit
+const RustoreRateit: IRustoreRateit = NativeModules.RustoreRateit
   ? NativeModules.RustoreRateit
   : new Proxy(
       {},
@@ -17,6 +17,10 @@ const RustoreRateit = NativeModules.RustoreRateit
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return RustoreRateit.multiply(a, b);
+interface IRustoreRateit {
+  runReviewFlow: () => Promise<string>;
+}
+
+export async function runReviewFlow(): Promise<string> {
+  return RustoreRateit.runReviewFlow();
 }
