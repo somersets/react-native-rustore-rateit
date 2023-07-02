@@ -1,6 +1,6 @@
 {
   "name": "@somersets/react-native-rustore-rateit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ReactNative RuStore SDK for comments and ratings an app",
   "main": "lib/module/index",
   "module": "lib/module/index",
