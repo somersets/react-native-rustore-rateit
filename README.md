@@ -40,7 +40,6 @@ android/app/build.gradle
 
 dependencies {
     ...
-    implementation ("com.google.code.gson:gson:2.10.1")
     implementation("ru.rustore.sdk:billingclient:0.1.6")
 }
 ```
