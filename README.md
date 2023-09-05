@@ -2,9 +2,6 @@
 
 ReactNative RuStore SDK for comments and ratings an app
 
-### Для поддержки проекта
-### https://www.tinkoff.ru/cf/1to7PiSSNzj
-
 ## Installation
 
 ```sh
